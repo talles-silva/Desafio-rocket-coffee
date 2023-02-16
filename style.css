@@ -1,0 +1,170 @@
+.img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.img-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  margin: 0, 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.mobile-logo-text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+}
+
+.rocket-logo {
+  width: 70px;
+}
+.rocket-title {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  margin: 28px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: purple;
+  transform: scale(1.07);
+}
+
+.getCoffe-btn {
+  color: white;
+  background-color: black;
+  border: 3px solid #8257e5;
+  border-radius: 10px;
+  height: 45px;
+  width: 200px;
+  padding: 2px 20px;
+  top: 50%;
+  transition: 80ms ease;
+}
+
+.getCoffe-btn:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  background-color: #29292e;
+}
+
+.menu-buguer-open {
+  display: none;
+}
+
+.img-left {
+  z-index: -1;
+}
+
+.img-right {
+  z-index: -1;
+}
+
+main {
+  color: white;
+  top: 0;
+  left: 50%;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.title1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.title2 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: #8257e5 2px -2px, #8257e5 -2px 2px, #8257e5 2px 2px,
+    #8257e5 -2px -2px;
+  color: black;
+}
+
+.coffee-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+@media (max-width: 923px) {
+  .rocket-logo {
+    width: 70px;
+  }
+  .rocket-title {
+    display: contents;
+    font-family: "Orbitron", sans-serif;
+    font-size: 25px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
+  .getCoffe-btn {
+    display: none;
+  }
+  .menu-buguer-open {
+    display: flex;
+    justify-content: end;
+    transition: 0.2s ease;
+  }
+  .menu-buguer-open:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .title1,
+  .title2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .rocket-logo {
+    width: 70px;
+  }
+
+  .rocket-title {
+    display: contents;
+    font-family: "Orbitron", sans-serif;
+    font-size: 22px;
+  }
+
+  .title1,
+  .title2 {
+    font-size: 32px;
+  }
+
+  .coffee {
+    width: 600px;
+  }
+}
